@@ -59,7 +59,7 @@ st.markdown("""
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('/Users/arjavkasliwal/Downloads/finaldatasetecom.csv')
+        df = pd.read_csv('finaldatasetecom.csv')
         df['Order Date'] = pd.to_datetime(df['Order Date'])
         return df
     except FileNotFoundError:
@@ -70,7 +70,7 @@ def load_data():
 @st.cache_data
 def load_ecommerce_data():
     try:
-        df = pd.read_csv('/Users/arjavkasliwal/Downloads/finaldatasetecom.csv')
+        df = pd.read_csv('finaldatasetecom.csv')
         df['Order Date'] = pd.to_datetime(df['Order Date'])
         return df
     except FileNotFoundError:
